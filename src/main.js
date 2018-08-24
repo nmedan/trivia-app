@@ -3,8 +3,8 @@ import VueRouter from 'vue-router'
 import Vuex from 'vuex'
 import App from './App.vue'
 import Trivia from './components/TriviaApp.vue'
-import {triviaStore} from './store'
-import {chuckStore } from './store'
+import {store} from '../store'
+
 
 
 Vue.config.productionTip = false
@@ -23,7 +23,6 @@ const router = new VueRouter({
 
 new Vue({
     router,
-    triviaStore,
-    chuckStore,
+    store,
     render: h => h(App)
 }).$mount('#app')
