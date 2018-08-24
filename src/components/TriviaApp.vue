@@ -1,7 +1,9 @@
 <template>
   <div>
-       This is new app.
        {{joke}}
+       <div>
+         <button @click="fetchJoke">Get new joke</button>
+       </div>
   </div>
 </template>
 
